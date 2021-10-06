@@ -1,0 +1,22 @@
+---
+- name: Create supervisor celery conf file
+  template:
+    src: templates/celery_supervisor.j2
+    dest: '/etc/supervisor/conf.d/{{ project_name }}_celery.conf'
+  notify: restart celery
+  when: celery_enabled
+  tags: backend
+
+- name: Supervisor celery conf file present
+  supervisorctl:
+    name: '{{ project_name }}_celery'
+    state: present
+  when: celery_enabled
+  tags: backend
+
+- name: Supervisor celery enabled
+  supervisorctl:
+    name: '{{ project_name }}_celery'
+    state: started
+  when: celery_enabled
+  tags: backend

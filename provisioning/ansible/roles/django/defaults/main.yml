@@ -1,0 +1,57 @@
+---
+# defaults file for endevel-django
+project_name:
+git_repo:
+git_branch:
+db_name:
+db_pass:
+db_user:
+db_custom_ext: []
+settings_file:
+project_domain:
+project_other_domains:  # depreceated because it supports only one domain
+project_other_domains_list:  # USE THIS INSTEAD OF 'project_other_domains" ... this should be a list ['www.endevel.cz']
+project_secret_key:
+sentry_dsn:
+settings_path: "{{ django_project_name }}.settings.{{ settings_file }}"
+eshop: false
+python_path: "{% if eshop %}/opt/python/bin/python3{% else %}python3.5{% endif %}"
+django_project_name: "{% if eshop %}saleor{% else %}main{% endif %}"
+
+email_host: localhost
+email_port: 25
+email_password:
+email_user:
+email_use_tls: false
+email_default_from: "info@{{ project_domain }}"
+
+user: administrator
+db_superuser: "{{ user }}"  # DB superuser must be same as user to backup.sh working correctly
+lc_collate: cs_CZ.UTF-8
+lc_ctype: cs_CZ.UTF-8
+encoding: UTF.8
+
+nxing_vhost_template: templates/nginx_vhost.j2
+nxing_vhost_ssl_template: templates/nginx_vhost_ssl.j2
+
+vue_frontend: false
+vue_git_repo:
+vue_project_name:
+vue_git_branch: master
+vue_frontend_static: false
+vue_git_same_repo: false
+vue_project_relative_path: "{{ vue_project_name }}"
+
+cron_email: support@endevel.cz
+
+celery_enabled: false
+redirect_http: false
+default_robots: true  # určuje jestli se bude generovat defaultní robots.txt v /var/www/project/static/robots.txt
+allow_robots: true
+
+
+root_path: "/var/www"
+project_path: "{{ root_path }}/{{ project_name }}"
+static_path: "{{ project_path }}/collected-static"
+media_path: "{{ project_path }}/media"
+vue_project_path: "{{ project_path }}/{{ vue_project_relative_path }}"

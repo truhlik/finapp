@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% load i18n %}
+
+{% block content %}
+    <div class="jumbotron">
+        <div class="container">
+            <h1>{% trans "Your account has been suspended for the security reasons" %}</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col">
+            {% trans 'You exceeded limit of' %} {{ failure_limit }} {% trans 'unsuccessful login attempts' %}.
+{#            {% trans 'You can try again in' %} {{ cooloff_time }} {% trans 'one day' %}.#}
+{#   TODO cooloff time is n ot human-friend ISO 8601 format #}
+{#   https://stackoverflow.com/questions/52197487/parse-iso-8601-date-format-in-django-tables2 maybe this could help #}
+            {% trans 'You can try again in one day' %}.
+          </div>
+        </div>
+
+        <hr>
+
+        <footer>
+            <p>&copy; Endevel s. r. o. {% now 'Y' %}</p>
+        </footer>
+    </div> <!-- /container -->
+{% endblock content %}

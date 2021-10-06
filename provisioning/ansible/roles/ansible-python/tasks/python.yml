@@ -1,0 +1,18 @@
+---
+- name: configure a makefile for python source
+  shell: ./configure {{python_configure_options}}
+  args:
+    chdir: "{{python_sandbox_path}}/Python-{{python_version}}"
+  environment:
+    LDFLAGS: "-L{{python_sandbox_path}}/readline/lib"
+    CFLAGS: "-I{{python_sandbox_path}}/readline/include"
+
+- name: build python from source
+  shell: make -j5
+  args:
+    chdir: "{{python_sandbox_path}}/Python-{{python_version}}"
+
+- name: install python
+  shell: make install
+  args:
+    chdir: "{{python_sandbox_path}}/Python-{{python_version}}"

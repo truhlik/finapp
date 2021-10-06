@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: lafranceinsoumise
+  description: Backup system. Files, dirs, databases. Upload to clouds.
+  license: MIT
+  company: La France insoumise
+  platforms:
+  - name: Ubuntu
+    versions:
+    - all
+  galaxy_tags:
+  - system
+  - cloud
+  - backup
+  min_ansible_version: 2.6

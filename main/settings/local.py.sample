@@ -1,0 +1,22 @@
+import os
+from decouple import AutoConfig
+
+config = AutoConfig(os.environ.get('DJANGO_CONFIG_ENV_DIR'))
+EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_FILE_PATH = os.path.join(config('PROJECT_HOME_DIR', ''), 'tmp/emails/')
+os.makedirs(EMAIL_FILE_PATH, exist_ok=True)
+
+AUTH_PASSWORD_VALIDATORS = []
+
+GOOGLE_MAPS_API_KEY = ''
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'main.libraries.pagination.CustomPageNumberPagination',
+    'DEFAULT_FILTER_BACKENDS': ['main.libraries.filters.CustomDjangoFilterBackend'],
+    'PAGE_SIZE': 20,
+    'SEARCH_PARAM': 'q',
+}

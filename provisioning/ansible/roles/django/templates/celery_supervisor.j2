@@ -1,0 +1,27 @@
+[program:{{ project_name }}_celery]
+directory = {{ project_path }}
+command = {{ project_path }}/.venv/bin/celery  worker --app={{ django_project_name }} --loglevel=info
+directory={{ project_path }}
+environment=LANG=cs_CZ.UTF-8,LC_ALL=cs_CZ.UTF-8
+
+user = {{ user | default(ansible_ssh_user) }}
+numprocs=1
+stdout_logfile = {{ project_path }}/log/worker_supervisor.log
+stdout_logfile_maxbytes=500000
+stdout_logfile_backups=10
+redirect_stderr=true
+stopsignal=QUIT
+autostart=true
+autorestart=true
+startsecs=10
+
+; Need to wait for currently executing tasks to finish at shutdown.
+; Increase this if you have very long running tasks.
+stopwaitsecs = 30
+
+; Causes supervisor to send the termination signal (SIGTERM) to the whole process group.
+stopasgroup=true
+
+; Set Celery priority higher than default (999)
+; so, if rabbitmq is supervised, it will start first.
+priority=998

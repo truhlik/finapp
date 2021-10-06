@@ -1,0 +1,22 @@
+project_name: finapp
+git_repo: git@gitlab.com:endevel/internal/projects/finapp.git
+sentry_dsn: https://65e1e7d7a70042779fbbcd4d23035df2:5ee81725b0034b24ad1f3f6f98abdbcf@sentry.endevel.cz/59
+
+db_name: finapp
+db_user: finapp
+db_pass: "{{ vault_db_pass }}"
+db_custom_ext: ['unaccent']
+
+project_secret_key: "{{ vault_project_secret_key }}"
+python_path: /opt/python/bin/python3  # kvůli Django3.0 potřebujeme python3.7
+
+vue_frontend: false
+#vue_project_name: reimpay_front
+#vue_frontend_static: true
+#vue_git_same_repo: true
+#vue_project_relative_path: "reimpay/front/src"
+
+celery_enabled: false
+
+#nxing_vhost_template: "{{ playbook_dir }}/templates/nginx_vhost.j2"
+#nxing_vhost_ssl_template: "{{ playbook_dir }}/templates/nginx_vhost_ssl.j2"

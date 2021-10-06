@@ -1,0 +1,55 @@
+image: python:3.7-slim-stretch
+
+services:
+  - postgres:latest
+  - redis:latest
+
+variables:
+  POSTGRES_DB: finapp
+  POSTGRES_USER: finapp
+  POSTGRES_PASSWORD: finapp
+  # REDIS_URL: redis://redis:6379/0
+
+  # Change pip's cache directory to be inside the project directory since we can
+  # only cache local items.
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  PROJECT_SECRET_KEY: "testing"
+
+
+# Pip's cache doesn't store the python packages
+# https://pip.pypa.io/en/stable/reference/pip_install/#caching
+#
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+cache:
+  paths:
+    - .cache/pip
+    - .venv/
+
+before_script:
+  - python -V
+  - pip install virtualenv
+  - virtualenv .venv
+  - source .venv/bin/activate
+  - pip install -r requirements/testing.pip
+
+stages:
+  - lint
+  - test
+#  - deploy
+
+lint_python:
+  stage: lint
+  script:
+    - flake8 main/
+
+test_python:
+  stage: test
+  script:
+    - python manage.py test --settings=main.settings.gitlab_settings
+
+#deploy:
+#  script:
+#    - pip install ansible==2.7.5
+#    - cd provisioning/ansible/
+#    - ansible-playbook deploy_develop.yml -u administrator

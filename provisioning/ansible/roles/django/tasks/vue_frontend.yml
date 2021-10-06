@@ -1,0 +1,65 @@
+---
+- git:
+    repo: '{{ vue_git_repo }}'
+    dest: '{{ vue_project_path }}'
+    version: '{{ vue_git_branch }}'
+    force: yes
+    accept_hostkey: yes
+  when: not vue_git_same_repo
+  tags: frontend
+
+- name: Creates log directory
+  file:
+    path: '{{ vue_project_path }}/log'
+    state: directory
+  when: vue_frontend
+  tags: frontend
+
+- name: Create index file from template if it doesn't exist already.
+  template:
+    src: "{{ playbook_dir }}/templates/.vue_env.j2"
+    dest: '{{ vue_project_path }}/.env'
+  when: vue_frontend
+
+- name: Install npm requirements
+  shell: "npm install"
+  args:
+    executable: /bin/bash
+    chdir: '{{ vue_project_path }}'
+  when: vue_frontend
+  tags: frontend
+
+- name: Build application
+  shell: "npm run build"
+  args:
+    executable: /bin/bash
+    chdir: '{{ vue_project_path }}'
+  notify: restart supervisor vue
+  when: vue_frontend
+  tags: frontend
+
+- name: Create supervisor project conf file
+  template:
+    src: templates/vue_supervisor.j2
+    dest: '/etc/supervisor/conf.d/{{ vue_project_name }}.conf'
+  notify: restart supervisor
+  when:
+    - not vue_frontend_static
+    - vue_frontend
+  tags: frontend
+
+- supervisorctl:
+    name: '{{ vue_project_name }}'
+    state: present
+  when:
+    - not vue_frontend_static
+    - vue_frontend
+  tags: frontend
+
+- supervisorctl:
+    name: '{{ vue_project_name }}'
+    state: started
+  when:
+    - not vue_frontend_static
+    - vue_frontend
+  tags: frontend

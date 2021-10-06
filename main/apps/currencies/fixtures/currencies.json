@@ -1,0 +1,1 @@
+[{"model": "currencies.currency", "pk": "CZK", "fields": {"name": "Kč"}}, {"model": "currencies.currency", "pk": "EUR", "fields": {"name": "€"}}, {"model": "currencies.currency", "pk": "USD", "fields": {"name": "$"}}]

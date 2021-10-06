@@ -1,0 +1,6 @@
+-r base.pip
+
+django-debug-toolbar
+model-bakery
+flake8
+ansible==2.7.10

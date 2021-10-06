@@ -1,0 +1,36 @@
+---
+- name: Create nginx virtual host
+  become: yes
+  become_user: root
+  template:
+    src: "{{ nxing_vhost_template | default('templates/nginx_vhost.j2') }}"
+    dest: '/etc/nginx/sites-available/{{ project_name }}.conf'
+  notify: reload nginx
+
+- name: Create symlink to sites-enabled
+  become: yes
+  become_user: root
+  file:
+    dest: '/etc/nginx/sites-enabled/{{ project_name }}.conf'
+    src: '/etc/nginx/sites-available/{{ project_name }}.conf'
+    state: link
+  notify: reload nginx
+
+- name: Create nginx virtual host for SSL
+  become: yes
+  become_method: sudo
+  template:
+    src: "{{ nxing_vhost_ssl_template | default('templates/nginx_vhost_ssl.j2') }}"
+    dest: '/etc/nginx/sites-available/{{ project_name }}_ssl.conf'
+  notify: reload nginx
+  when: redirect_http
+
+- name: Create symlink to sites-enabled for SSL
+  become: yes
+  become_method: sudo
+  file:
+    dest: '/etc/nginx/sites-enabled/{{ project_name }}_ssl.conf'
+    src: '/etc/nginx/sites-available/{{ project_name }}_ssl.conf'
+    state: link
+  notify: reload nginx
+  when: redirect_http

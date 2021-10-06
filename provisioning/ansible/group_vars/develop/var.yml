@@ -1,0 +1,9 @@
+### PROJECT VARIABLES ###
+git_branch: master
+settings_file: develop
+project_domain: finapp.endevel.cz
+
+redirect_http: true
+allow_robots: false
+default_notification_email: lubos@endevel.cz
+

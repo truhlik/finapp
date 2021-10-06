@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  remote_user: root
+
+  vars:
+    exim4_sendonly_fqdn: 'travis.local'
+    exim4_sendonly_email_addresses:
+      root: 'root@travis.local'
+
+  roles:
+    - role_under_test

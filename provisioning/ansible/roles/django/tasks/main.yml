@@ -1,0 +1,138 @@
+- git:
+    repo: '{{ git_repo }}'
+    dest: '{{ project_path }}'
+    version: '{{ git_branch }}'
+    force: yes
+    accept_hostkey: yes
+  notify:
+    - restart supervisor
+    - restart celery
+  tags: backend
+
+- name: Creates log directory
+  file:
+    path: '{{ project_path }}/log'
+    state: directory
+  tags: backend
+
+- name: create project DB
+  postgresql_db:
+    name: '{{ db_name }}'
+    login_host: localhost
+    login_user: "{{ db_superuser }}"
+    login_password: '{{ vault_database_password }}'
+    encoding: "{{ encoding }}"
+    template: template0
+  tags: backend
+
+- name: create custom extensions
+  postgresql_ext:
+    name: "{{ item }}"
+    db: '{{ db_name }}'
+    login_host: localhost
+    login_user: "{{ db_superuser }}"
+    login_password: '{{ vault_database_password }}'
+    state: present
+  with_items: "{{ db_custom_ext }}"
+  when: db_custom_ext|length > 0
+
+- name: create project DB users
+  postgresql_user:
+    db: '{{ db_name }}'
+    login_host: localhost
+    login_user: "{{ db_superuser }}"
+    login_password: '{{ vault_database_password }}'
+    name: '{{ db_user }}'
+    password: '{{ db_pass }}'
+  tags: backend
+
+- name: Install requirements
+  pip:
+    requirements: '{{ project_path }}/requirements/{{ settings_file }}.pip'
+    virtualenv: '{{ project_path }}/.venv/'
+    virtualenv_python: "{{ python_path }}"
+  notify:
+    - restart supervisor
+    - restart celery
+  tags: backend
+
+- name: Create .env file from template if it doesn't exist already.
+  template:
+    src: "{{ playbook_dir }}/templates/.env.j2"
+    dest: '{{ project_path }}/.env'
+  notify:
+    - restart supervisor
+    - restart celery
+  tags: backend
+
+- name: fix permissions on manage.py
+  file:
+    path: "{{ project_path }}/manage.py"
+    # recurse: yes
+    mode: "u=rwx,g=rwx,o=rx"
+  tags: backend
+
+- name: django migrate
+  django_manage:
+    command: migrate
+    app_path: "{{ project_path }}"
+    settings: "{{ settings_path }}"
+    virtualenv: "{{ project_path }}/.venv/"
+  tags: backend
+
+- include: eshop.yml
+  when: eshop
+
+- name: Create static dir
+  file:
+    path: "{{ static_path }}"
+    state: directory
+  when: default_robots
+
+- name: Create robots.txt
+  template:
+    src: templates/.robots.txt
+    dest: '{{ static_path }}/robots.txt'
+  when: default_robots
+
+- name: django collectstatic
+  django_manage:
+    command: collectstatic
+    app_path: "{{ project_path }}"
+    settings: "{{ settings_path }}"
+    virtualenv: "{{ project_path }}/.venv/"
+  tags: backend
+
+- name: Create supervisor project conf file
+  become: yes
+  become_user: root
+  template:
+    src: templates/app_supervisor.j2
+    dest: '/etc/supervisor/conf.d/{{ project_name }}.conf'
+  notify: restart supervisor
+  tags: backend
+
+- name: supervisor project conf present
+  supervisorctl:
+    name: '{{ project_name }}'
+    state: present
+  tags: backend
+
+- name: supervisor project start
+  supervisorctl:
+    name: '{{ project_name }}'
+    state: started
+  tags: backend
+
+- include: vue_frontend.yml
+  when: vue_frontend
+
+- include: nginx.yml
+
+- include: celery.yml
+  when: celery_enabled
+
+- name: Ensure EMAIL variable exists in crontab
+  cronvar:
+    name: EMAIL
+    value: '{{ cron_email }}'

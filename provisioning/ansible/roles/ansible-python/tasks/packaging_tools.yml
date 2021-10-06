@@ -1,0 +1,31 @@
+---
+- name: build and install python packaging tools
+  command: "{{python_bin}}/python3 setup.py install"
+  args:
+    chdir: "{{python_sandbox_path}}/{{item.dir}}"
+    creates: "{{python_bin}}/{{item.bin}}"
+  with_items:
+    # dir: the directory containing the library's setup.py to invoke.
+    # bin: the library's installed binary, used with `creates` to
+    # predicate installation.
+    - dir: setuptools-{{python_setuptools_version}}
+      bin: easy_install
+    - dir: pip-{{python_pip_version}}
+      bin: pip
+
+- name: install virtualenv
+  pip:
+    name: virtualenv
+    version: "{{python_virtualenv_version}}"
+    executable: "{{python_bin}}/pip"
+
+- name: upgrade packaging tools
+  pip:
+    name: "{{item}}"
+    state: latest
+    executable: "{{python_bin}}/pip"
+  with_items:
+    - setuptools
+    - pip
+    - virtualenv
+  when: python_upgrade_packaging_tools

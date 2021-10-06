@@ -1,0 +1,35 @@
+---
+- name: create eshop extensions
+  postgresql_ext:
+    name: "{{ item }}"
+    db: '{{ db_name }}'
+    login_host: localhost
+    login_user: "{{ db_superuser }}"
+    login_password: '{{ vault_database_password }}'
+    state: present
+  with_items:
+    - hstore
+    - pg_trgm
+    - btree_gin
+  when: eshop
+  tags: backend
+
+- name: Install packages based on package.json for saleor
+  npm:
+    path: "{{ project_path }}"
+  when: eshop
+  tags: backend
+
+- name: Build assets for saleor
+  command: "npm run build-assets"
+  args:
+    chdir: "{{ project_path }}"
+  when: eshop
+  tags: backend
+
+- name: Build emails for saleor
+  command: "npm run build-emails"
+  args:
+    chdir: "{{ project_path }}"
+  when: eshop
+  tags: backend

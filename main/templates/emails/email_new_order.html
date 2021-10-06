@@ -1,0 +1,24 @@
+{% extends 'emails/email_base.html' %}
+{% load i18n static %}
+
+{% block content %}
+<p>
+    Na portálu {{ site_url }} jste zadali objednávku 3D tisku/modelování uživateli<br/>
+    {{ order_detail_url }}.<br/><br/>
+
+    Vámi zadaný model:<br/>
+    {{ model_url }}<br/>
+    Vaše požadavky:<br/>
+    {{ description }}<br/>
+    Materiál: {{ material }}, barva: {{ color }}<br/>
+    {% if deadline %}nejpozději do: {{ deadline }}{% endif %}<br/>
+
+</p>
+<p>
+V nejbližší době budete kontaktován/a tiskařem/modelářem, abyste společně doumluvili detaily a cenu zakázky.
+Pokud se s tiskařem nedohodnete, můžete zakázku stornovat na následujícím odkazu: {{ order_detail_url }}
+</p>
+<p>
+V případě jakýchkoliv dotazů nás neváhejte kontaktovat na adrese {{ default_contact_email }}
+</p>
+{% endblock %}

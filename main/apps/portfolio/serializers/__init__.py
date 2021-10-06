@@ -1,0 +1,11 @@
+from .portfolio_serializer import *  # noqa
+from .bank_account_serializer import BankAccountsSerializer  # noqa
+from .bond_serializer import BondsSerializer  # noqa
+from .saving_account_serializer import SavingAccountSerializer  # noqa
+from .term_account_serializer import TermAccountSerializer  # noqa
+from .building_saving_serializer import BuildingSavingSerializer  # noqa
+from .pension_saving_serializer import PensionSavingSerializer  # noqa
+from .stock_serializer import StocksSerializer  # noqa
+from .crypto_serializer import CryptosSerializer  # noqa
+from .commodity_serializer import CommoditySerializer  # noqa
+from .share_etf_serializer import ShareEtfSerializer  # noqa

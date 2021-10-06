@@ -1,0 +1,55 @@
+version: "3"
+services:
+  db:
+    image: "mdillon/postgis:11"
+    environment:
+      - POSTGRES_USER=tisknu
+      - POSTGRES_PASSWORD=tisknu
+      - POSTGRES_DB=tisknu
+    volumes:
+      - tisknupg:/var/lib/postgresql/data
+    ports:
+      - "15432:5432"
+  redis:
+    image: "redis:alpine"
+  api:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000 --settings=main.settings.localhost
+    environment:
+      - POSTGRESQL_HOST=db
+      - POSTGRESQL_PORT=5432
+      - POSTGRESQL_DATABASE=tisknu
+      - POSTGRESQL_USER=tisknu
+      - POSTGRESQL_PASSWORD=tisknu
+      - PROJECT_SECRET_KEY=develop
+      - SENTRY_DSN=
+      - ENVIRONMENT=localhost
+      - ALLOWED_HOSTS=*
+      - DJANGO_SETTINGS_MODULE=main.settings.localhost
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - migration
+      - db
+      - redis
+  migration:
+    build: .
+    command: python manage.py migrate --noinput --settings=main.settings.localhost
+    environment:
+      - POSTGRESQL_HOST=db
+      - POSTGRESQL_PORT=5432
+      - POSTGRESQL_DATABASE=tisknu
+      - POSTGRESQL_USER=tisknu
+      - POSTGRESQL_PASSWORD=tisknu
+      - PROJECT_SECRET_KEY=develop
+      - SENTRY_DSN=
+      - ENVIRONMENT=localhost
+      - ALLOWED_HOSTS=*
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+volumes:
+    tisknupg:

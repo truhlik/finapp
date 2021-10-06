@@ -1,0 +1,503 @@
+kategorie,název produktu,ho2dnota,měna,zhodnocení,společnost
+"commodities",Bavlna,0.82,USD,,
+"commodities",Cukr,0.16,USD,,
+"commodities",Hliník,"1,993.00",USD,,
+"commodities",Káva,123.00,USD,,
+"commodities",Kukuřice,503.00,USD,,
+"commodities",Měď,"7,985.00",USD,,
+"commodities",Nikl,"18,096.00",USD,,
+"commodities",Palladium,"2,355.00",USD,,
+"commodities",Platina,"1,104.00",USD,,
+"commodities",Pšenice,636.00,USD,,
+"commodities",Ropa (Brent),55.00,USD,,
+"commodities",Ropa (WTI),52.00,USD,,
+"commodities",Stříbro,25.00,USD,,
+"commodities",Zemní plyn,2.00,USD,,
+"commodities",Zinek,"2,692.00",USD,,
+"commodities",Zlato,"1,824.00",USD,,
+"cryptos",Bitcoin,"31,908.00",USD,,Coinmate
+"cryptos",Ethereum,"1,348.00",USD,,Coinmate
+"cryptos",Tether,1.00,USD,,Coinmate
+"cryptos",Polkadot,17.67,USD,,Coinmate
+"cryptos",Ripple,0.27,USD,,Coinmate
+"cryptos",Cardano,0.35,USD,,Coinmate
+"cryptos",Chainlink,24.50,USD,,Coinmate
+"cryptos",Litecoin,138.00,USD,,Coinmate
+"cryptos",Bitcoin Cash,431.00,USD,,Coinmate
+"cryptos",Binance Coin,41.00,USD,,Coinmate
+"cryptos",Stellar Lumens,0.27,USD,,Coinmate
+"cryptos",Wrapped Bitcoin,"31,793.00",USD,,Coinmate
+"cryptos",Bitcoin SV,173.10,USD,,Coinmate
+"cryptos",USD Coin,1.00,USD,,Coinmate
+"cryptos",EOS,2.70,USD,,Coinmate
+"cryptos",Monero,136.70,USD,,Coinmate
+"cryptos",Uniswap,11.54,USD,,Coinmate
+"cryptos",Tezos,3.05,USD,,Coinmate
+"cryptos",Cosmos,8.16,USD,,Coinmate
+"cryptos",Tron,0.03,USD,,Coinmate
+"bonds","ALPHA QUEST 4,5/21","100,000.00",CZK,"4,50 %",J&T Banka
+"bonds","APS FINAN. 5,00/23","6,479.00",CZK,"3,80 %",J&T Banka
+"bonds","AQUILA RAF 5,00/23","10,000.00",CZK,"4,39 %",J&T Banka
+"bonds","AQUILA RAF 5,25/22","50,000.00",CZK,"3,82 %",J&T Banka
+"bonds","Auctor 5,00/2025","1,000.00",EUR,"5,00 %",J&T Banka
+"bonds","EMG 4,90/2024","1,000.00",EUR,"4,73 %",J&T Banka
+"bonds","EN.-PRO GF 6,50/23","10,000.00",CZK,"4,18 %",J&T Banka
+"bonds","EPH 4,50/25","10,000.00",CZK,"4,10 %",J&T Banka
+"bonds","EUROVEA 4,50 /2022","1,000.00",EUR,"3,53 %",J&T Banka
+"bonds","Fidurock 5,60/24","10,000.00",CZK,"4,22 %",J&T Banka
+"bonds","FINEP HLB 5,00/23","10,000.00",CZK,"3,48 %",J&T Banka
+"bonds","HEUREKA 5,25/25","10,000.00",CZK,"4,76 %",J&T Banka
+"bonds","J&T E.F.C. 4,75/21","3,000,000.00",CZK,"1,98 %",J&T Banka
+"bonds","J&T EF IV 5,60/22","3,000,000.00",CZK,"5,37 %",J&T Banka
+"bonds",JOJ Media House 0/2021,"1,000.00",EUR,"4,19 %",J&T Banka
+"bonds","JTEF CZK II 5,25/2025","3,000,000.00",CZK,"5,46 %",J&T Banka
+"bonds","JTEF CZKI 5,00/2023","3,000,000.00",CZK,"5,06 %",J&T Banka
+"bonds","JTFG VIII 4,00/22","3,000,000.00",CZK,"3,65 %",J&T Banka
+"bonds","JTFG X 4,75/24","3,000,000.00",CZK,"4,75 %",J&T Banka
+"bonds","JTRE FIN.3 0,00/24","10,000.00",CZK,"6,36 %",J&T Banka
+"bonds","JTSEC 5,00 / 2023","3,000,000.00",CZK,"4,66 %",J&T Banka
+"bonds","LIB. O. M. 5,30/23","10,000.00",CZK,"5,50 %",J&T Banka
+"bonds","NATLAND R. 5,47 /24","10,000.00",CZK,"4,87 %",J&T Banka
+"bonds","NUPEH CZ 5,90/25","10,000.00",CZK,"5,74 %",J&T Banka
+"bonds","PSG 5,25/2023","10,000.00",CZK,"3,80 %",J&T Banka
+"bonds","ROHLIK FIN. 6,60/23","10,000.00",CZK,"3,22 %",J&T Banka
+"bonds","SAVARIN 0,00/26","50,000.00",CZK,"6,98 %",J&T Banka
+"bonds","SAZKA GR. 5,20/24","10,000.00",CZK,"4,05 %",J&T Banka
+"bonds","SG 4,00/2022","1,000.00",EUR,"2,90 %",J&T Banka
+"bonds","TMR F. CR 4,50/22","30,000.00",CZK,"5,15 %",J&T Banka
+"term-accounts",Termínovaný vklad,,CZK,3 %,"Akcenta, spořitelní a úvěrní družstvo"
+"term-accounts",Termínovaný vklad,,CZK,"2,10 %","Artesa, spořitelní družstvo (STANDARD)"
+"term-accounts",Termínovaný vklad,,CZK,"1,85 %",Banka CREDITAS
+"term-accounts",Termínovaný vklad,,CZK,"0,50 %",Equa bank
+"term-accounts",Termínovaný vklad,,CZK,"0,70 %",Expobank
+"term-accounts",Termínovaný vklad,,CZK,"0,35 %",Fio banka
+"term-accounts",Termínovaný vklad,,CZK,"1,80 %",J&T Banka
+"term-accounts",Termínovaný vklad,,CZK,"0,01 %",Komerční banka
+"term-accounts",Termínovaný vklad,,CZK,"0,30 %",Moneta Money Bank
+"term-accounts",Termínovaný vklad,,CZK,"2,60 %",NEY spořitelní družstvo
+"term-accounts",Termínovaný vklad,,CZK,"0,60 %",Oberbank AG
+"term-accounts",Termínovaný vklad,,CZK,"0,60 %","Poštová banka, pobočka ČR"
+"term-accounts",Termínovaný vklad,,CZK,"0,05 %",Poštovní spořitelna
+"term-accounts",Termínovaný vklad,,CZK,"0,01 %",Raiffeisenbank
+"term-accounts",Termínovaný vklad,,CZK,"0,20 %",Sberbank
+"term-accounts",Termínovaný vklad,,CZK,"0,10 %",UniCredit Bank
+"term-accounts",Termínovaný vklad,,CZK,"0,40 %",Wüstenrot ProZisk A
+"building-savings",ČMSS AktivPlus Spořicí,,CZK,"3,019 %",Českomoravská stavební spořitelna
+"building-savings",ČMSS AktivPlus Spořicí akce 1500 Kč,,CZK,"3,413 %",Českomoravská stavební spořitelna
+"building-savings",ČMSS AktivPlus Spořicí pro klienty ČSOB,,CZK,"3,413 %",Českomoravská stavební spořitelna
+"building-savings",ČMSS AktivPlus Spořicí s prémií za nového klienta,,CZK,"3,160 %",Českomoravská stavební spořitelna
+"building-savings",MPSS Moudré spoření,,CZK,"3,125 %",Modrá pyramida
+"building-savings",MPSS POHODA,,CZK,"3,517 %",Modrá pyramida
+"building-savings",MPSS Prémie 2000 Kč,,CZK,"3,517 %",Modrá pyramida
+"building-savings",MPSS START,,CZK,"3,517 %",Modrá pyramida
+"building-savings",MSS ProSpoření,,CZK,"3,125 %",Moneta Stavební spořitelna
+"building-savings",MSS ProSpoření 55+ (200 tis.),,CZK,"3,518 %",Moneta Stavební spořitelna
+"building-savings",MSS ProSpoření 55+ (500 tis.),,CZK,"3,518 %",Moneta Stavební spořitelna
+"building-savings",MSS ProSpoření Kamarád,,CZK,"3,518 %",Moneta Stavební spořitelna
+"building-savings",MSS ProSpoření Kamarád+,,CZK,"3,518 %",Moneta Stavební spořitelna
+"building-savings",MSS ProSpoření online,,CZK,"3,518 %",Moneta Stavební spořitelna
+"building-savings",MSS ProSpoření Premium,,CZK,"3,518 %",Moneta Stavební spořitelna
+"building-savings",RSTS HYPO U 173,,CZK,"2,338 %",Raiffeisen stavební spořitelna
+"building-savings",RSTS REKO U 172,,CZK,"2,338 %",Raiffeisen stavební spořitelna
+"building-savings",RSTS SPOŘENÍ S 202,,CZK,"3,127 %",Raiffeisen stavební spořitelna
+"building-savings",SSČS Standard,,CZK,"3,129 %",Stavební spořitelna české spořitelny
+"pension-savings",Allianz Dynamický,,CZK,"3,89 %",Allianz
+"pension-savings",Allianz Povinný konzervativní,,CZK,"0,42 %",Allianz
+"pension-savings",Allianz Vyvážený,,CZK,"0,21 %",Allianz
+"pension-savings",Axa Dluhopisový,,CZK,"-0,13 %",AXA
+"pension-savings",AXA Povinný konzervativní,,CZK,"-0,08 %",AXA
+"pension-savings",Axa Vyvážený,,CZK,"2,67 %",AXA
+"pension-savings",Conseq Dluhopisový,,CZK,"1,25 %",Conseq IM
+"pension-savings",Conseq Globální akciový,,CZK,"5,99 %",Conseq IM
+"pension-savings",Conseq Povinný konzervativní,,CZK,"0,04 %",Conseq IM
+"pension-savings",ČP Dynamický,,CZK,"4,62 %",Česká pojištovna
+"pension-savings",ČP Povinný konzervativní,,CZK,"0,34 %",Česká pojištovna
+"pension-savings",ČP Spořicí,,CZK,"0,82 %",Česká pojištovna
+"pension-savings",ČP Vyvážený,,CZK,"2,75 %",Česká pojištovna
+"pension-savings",ČS Dynamický,,CZK,"5,47 %",Česká spořitelna
+"pension-savings",ČS Etický *,,CZK,"3,08 %",Česká spořitelna
+"pension-savings",ČS Povinný konzervativní,,CZK,"0,52 %",Česká spořitelna
+"pension-savings",ČS Vyvážený,,CZK,"3,21 %",Česká spořitelna
+"pension-savings",ČSOB Dynamický,,CZK,"6,75 %",ČSOB
+"pension-savings",ČSOB Garantovaný,,CZK,"-0,18 %",ČSOB
+"pension-savings",ČSOB Povinný konzervativní,,CZK,"0,28 %",ČSOB
+"pension-savings",ČSOB Vyvážený,,CZK,"3,27 %",ČSOB
+"pension-savings",Inflace,,CZK,"1,68 %",J&T Banka
+"pension-savings",KB Dynamický,,CZK,"3,38 %",Komerční banka
+"pension-savings",KB Povinný konzervativní,,CZK,"-0,14 %",Komerční banka
+"pension-savings",KB Spořicí,,CZK,"-0,14 %",Komerční banka
+"pension-savings",KB Vyvážený,,CZK,"1,46 %",Komerční banka
+"pension-savings",NN Povinný konzervativní,,CZK,"0,12 %",J&T Banka
+"pension-savings",NN Růstový,,CZK,"4,04 %",J&T Banka
+"pension-savings",NN Vyvážený (dříve Spořicí),,CZK,"1,13 %",J&T Banka
+"saving-accounts","Air Bank, a. s.Spořicí účet s bonusovou sazbou",,CZK,"0,6 %",Air bank
+"saving-accounts","Artesa, spořitelní družstvoSpořicí účet Artesa Universal",,CZK,"1,7 %",Artesa
+"saving-accounts",Banka CREDITASSpořicí účet+,,CZK,"0,5 %",CREDITAS
+"saving-accounts","Česká spořitelna, a.s.Spoření České spořitelny",,CZK,"0,2 %",Česká spořitelna
+"saving-accounts","Česká spořitelna, a.s.Spoření Premier",,CZK,"0,2 %",Česká spořitelna
+"saving-accounts","Československá obchodní banka, a. s.Duo Profit",,CZK,"1,5 %",ČSOB
+"saving-accounts","Československá obchodní banka, a. s.Spoření s bonusem",,CZK,"0,31 %",ČSOB
+"saving-accounts","Československá obchodní banka, a. s.Spoření s bonusem pro děti",,CZK,"0,3 %",ČSOB
+"saving-accounts","Československá obchodní banka, a. s.Spoření s bonusem pro děti (+ účet a investice)",,CZK,"0,5 %",ČSOB
+"saving-accounts","Československá obchodní banka, a. s.Spoření s bonusem pro děti (+ účet)",,CZK,"0,4 %",ČSOB
+"saving-accounts",Equa bank a.s.Spořicí účet HIT,,CZK,"0,7 %",Equa banka
+"saving-accounts",Equa bank a.s.Spořicí účet MAX,,CZK,"0,3 %",Equa banka
+"saving-accounts",ExpobankExpo spořicí účet,,CZK,"0,1 %",Expobank
+"saving-accounts",ExpobankExpo spořicí účet Premium,,CZK,"0,1 %",Expobank
+"saving-accounts",ExpobankNEO účet,,CZK,"0,25 %",Expobank
+"saving-accounts","Fio banka, a.s.Fio konto",,CZK,"0,1 %",Fio banka
+"saving-accounts",Hello bank!Hello spořicí účet,,CZK,1 %,Hello bank
+"saving-accounts",ING Bank N.V.ING Konto,,CZK,"0,3 %",ING Bank
+"saving-accounts","Komerční banka, a.s.KB Spořicí konto Bonus",,CZK,"0,2 %",Komerční banka
+"saving-accounts","Komerční banka, a.s.KB Spořicí konto Invest",,CZK,3 %,Komerční banka
+"saving-accounts",mBankeMax Plus,,CZK,"0,01 %",mBank
+"saving-accounts",mBankeMax Plus Váš vyšší zisk,,CZK,"0,01 %",mBank
+"saving-accounts",mBankmSpoření,,CZK,"0,9 %",mBank
+"saving-accounts",MONETA Money BankSpořicí účet,,CZK,"0,5 %",MONETA
+"saving-accounts",OberbankSpořicí účet Limit,,CZK,"0,05 %",Oberbank
+"saving-accounts",OberbankSpořicí účet Speciál,,CZK,"0,01 %",Oberbank
+"saving-accounts",Raiffeisenbank a.s.Spořicí účet XL,,CZK,"0,1 %",Raiffeisenbank
+"saving-accounts",Raiffeisenbank a.s.Spořicí účet XL s bonusem,,CZK,"0,6 %",Raiffeisenbank
+"saving-accounts",Raiffeisenbank a.s.Základní spořicí účet,,CZK,"0,1 %",Raiffeisenbank
+"saving-accounts",TRINITY BANKSpořicí účet Úrok+,,CZK,"0,2 %",TRINITY BANK
+"saving-accounts",TRINITY BANKSpořicí účet Výhoda+,,CZK,"0,51 %",TRINITY BANK
+"saving-accounts",UniCredit BankSpořicí účet Prima,,CZK,"0,05 %",UniCredit Bank
+"bank-accounts",běžný účet,,CZK,,Air bank
+"bank-accounts",běžný účet,,CZK,,Česká spořitelna
+"bank-accounts",běžný účet,,CZK,,Creditas
+"bank-accounts",běžný účet,,CZK,,ČSOB
+"bank-accounts",běžný účet,,CZK,,Equa bank
+"bank-accounts",běžný účet,,CZK,,Expobank
+"bank-accounts",běžný účet,,CZK,,Fio banka
+"bank-accounts",běžný účet,,CZK,,Hello bank
+"bank-accounts",běžný účet,,CZK,,jiné...
+"bank-accounts",běžný účet,,CZK,,Komeční banka
+"bank-accounts",běžný účet,,CZK,,mBank
+"bank-accounts",běžný účet,,CZK,,Moneta money bank
+"bank-accounts",běžný účet,,CZK,,Oberbank
+"bank-accounts",běžný účet,,CZK,,Poštovní spořitelna
+"bank-accounts",běžný účet,,CZK,,Raiffeisen bank
+"bank-accounts",běžný účet,,CZK,,Sberbank
+"bank-accounts",běžný účet,,CZK,,Unicredit bank
+"share-etf","Active Invest Dynamický
+CZ0008474202","13,594.00",CZK,,Conseq IM
+"share-etf","Active Invest Konzervativní
+CZ0008474194","10,807.00",CZK,,Conseq IM
+"share-etf","Active Invest Vyvážený
+CZ0008474210","12,188.00",CZK,,Conseq IM
+"share-etf","BGF Euro Bond (EUR)
+LU0050372472","313,300.00",EUR,,Conseq IM
+"share-etf","Conseq Active Invest Dynamický, CSQF SICAV (EUR)
+CZ0008044732","1,180.00",EUR,,Conseq IM
+"share-etf","Conseq Active Invest Dynamiczny, CSQF SICAV (PLN)
+CZ0008044724","13,477.00",PLN,,Conseq IM
+"share-etf","Conseq Indexový ETF Aggressive ESG A (CZK)
+CZ0008476181","10,320.00",CZK,,Conseq IM
+"share-etf","Conseq Invest Akcie Nové Evropy A
+IE0031283306","2,430,993.00",CZK,,Conseq IM
+"share-etf","Conseq Invest Dluhopisový A
+IE0031282662","2,235,911.00",CZK,,Conseq IM
+"share-etf","Conseq Invest Dluhopisy Nové Evropy A
+IE00B0SY6161","1,549,197.00",CZK,,Conseq IM
+"share-etf","Conseq Invest Konzervativní A
+IE0034074827","1,368,737.00",CZK,,Conseq IM
+"share-etf","Conseq korporátních dluhopisů A
+CZ0008473873","11,391.00",CZK,,Conseq IM
+"share-etf","Conseq Polskich Obligacji, CSQF SICAV (PLN)
+CZ0008044716","12,110.00",PLN,,Conseq IM
+"share-etf","Conseq realitní (CZK)
+CZ0008472859","14,785.00",CZK,,Conseq IM
+"share-etf","Conseq realitní (EUR)
+CZ0008475654","1,101.00",EUR,,Conseq IM
+"share-etf","FF - Euro Corporate Bond Fund (EUR)
+LU0370787193","347,000.00",EUR,,Conseq IM
+"share-etf","FF - European Growth Fund (EUR)
+LU0296857971","133,700.00",EUR,,Conseq IM
+"share-etf","FF - Fidelity Target™ 2050 (Euro) Fund (EUR)
+LU1025014629","171,800.00",EUR,,Conseq IM
+"share-etf","FF - Global Dividend Fund hedged (EUR)
+LU0605515377","231,500.00",EUR,,Conseq IM
+"share-etf","Templeton Global Bond Fund (EUR)
+LU0152980495","236,900.00",EUR,,Conseq IM
+"share-etf","Templeton Growth (Euro) Fund (EUR)
+LU0114760746","175,000.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I All China Equity Fund (USD)
+LU0231483743","471,938.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I Asia Pacific Equity Fund (EUR)
+LU0566486402","150,955.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Asia Pacific Equity Fund (USD)
+LU0011963245","1,225,261.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I Asian Local Curr Short Bond (EUR)
+LU0619785693","99,706.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Asian Local Curr Short Bond (USD)
+LU0094548533","77,540.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I Asian Property Share Fund (USD)
+LU0396313180","186,268.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I Asian Property Share Fund he(EUR)
+LU0476875603","76,147.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Asian Smaller Companies (USD)
+LU0231459107","560,556.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I Eastern European Equity (EUR)
+LU0505664713","1,096,080.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I EM Corporate Bond Fund (USD)
+LU0566480116","161,596.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I EM Infrastructure Equity (USD)
+LU0523223757","99,819.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I EM Infrastructure Equity hed(EUR)
+LU0523223328","86,411.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I EM Local Currency Bond A2 (USD)
+LU0396317926","101,770.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I Emerging Markets Bond Fund (EUR)
+LU0376989207","1,427,331.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Emerging Markets Bond Fund (USD)
+LU0132414144","490,916.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I European Equity Dividend (EUR)
+LU0505661966","2,236,151.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I European Equity Dividend hed(USD)
+LU0505662188","2,425,035.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I European Equity Fund (EUR)
+LU0094541447","699,132.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Global Innovation Equity (USD)
+LU0107464264","123,266.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I Indian Equity Fund (USD)
+LU0231490524","1,869,881.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I Japanese Equity Fund hedged (EUR)
+LU0476876759","157,538.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Japanese Equity Fund S2 (JPY)
+LU0476876247","334,248,696.00",JPY,,Conseq IM
+"share-etf","Aberdeen SICAV I Japanese Smaller Compan. he(EUR)
+LU0476877054","299,381.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Japanese Smaller Companies S(JPY)
+LU0476876833","2,156,273,110.00",JPY,,Conseq IM
+"share-etf","Aberdeen SICAV I Latin American Equity (USD)
+LU0396314238","35,657,233.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I Latin American Equity hedged(EUR)
+LU0566486667","64,817.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Russian Equity Fund (EUR)
+LU0505665959","107,532.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Russian Equity Fund (EUR)
+LU0505785260","105,624.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I Sel. Euro High Yield Bond A2(EUR)
+LU0119176310","246,295.00",EUR,,Conseq IM
+"share-etf","Aberdeen SICAV I World Equity Fund (USD)
+LU0094547139","255,380.00",USD,,Conseq IM
+"share-etf","Aberdeen SICAV I World Resources Equity (USD)
+LU0505663152","157,413.00",USD,,Conseq IM
+"share-etf","Accolade Industrial fond fondů, OPF (CZK)
+CZ0008475936","10,785.00",CZK,,Conseq IM
+"share-etf","Accolade Industrial Fund A2 Dis (CZK)
+MT7000018404","1,984,241.00",CZK,,Conseq IM
+"share-etf","Accolade Industrial Fund B2 Dis (EUR)
+MT7000018412","2,034,088.00",EUR,,Conseq IM
+"share-etf","Allianz Best Styles Emerging Markets Equity (EUR)
+LU1282651980","1,505,500.00",EUR,,Conseq IM
+"share-etf","Allianz Best Styles Global Equity (EUR)
+LU1322973477","1,403,600.00",EUR,,Conseq IM
+"share-etf","Allianz Best Styles US Equity (EUR)
+LU0933100637","2,538,800.00",EUR,,Conseq IM
+"share-etf","Allianz Best Styles US Equity (USD)
+LU1428085952","184,300.00",USD,,Conseq IM
+"share-etf","Allianz Best Styles US Equity hedged (EUR)
+LU0933100983","2,105,300.00",EUR,,Conseq IM
+"share-etf","Allianz Capital Plus (EUR)
+LU1254136416","1,147,600.00",EUR,,Conseq IM
+"share-etf","Allianz Capital Plus hedged (CZK)
+LU1291196241","34,904,500.00",CZK,,Conseq IM
+"share-etf","Allianz Discovery Europe Strategy hedged (CZK)
+LU1807155764","29,256,800.00",CZK,,Conseq IM
+"share-etf","Allianz Dynamic Multi Asset Strategy 50 (CZK)
+LU1867686047","33,655,200.00",CZK,,Conseq IM
+"share-etf","Allianz Dynamic Multi Asset Strategy 50 (EUR)
+LU1093406186","1,305,500.00",EUR,,Conseq IM
+"share-etf","Allianz Europe Equity Growth Select (EUR)
+LU0920839346","2,032,000.00",EUR,,Conseq IM
+"share-etf","Allianz Europe Equity Growth Select hedged (CZK)
+LU1288334391","46,100,500.00",CZK,,Conseq IM
+"share-etf","Allianz Europe Equity Growth Select hedged (USD)
+LU0920840948","157,300.00",USD,,Conseq IM
+"share-etf","Allianz European Equity Dividend (EUR)
+LU0414045822","2,521,700.00",EUR,,Conseq IM
+"share-etf","Allianz European Equity Dividend dis hedged (CZK)
+LU1269085392","27,930,500.00",CZK,,Conseq IM
+"share-etf","Allianz European Equity Dividend hedged (CZK)
+LU1288334045","31,008,500.00",CZK,,Conseq IM
+"share-etf","Allianz German Equity (EUR)
+LU0840617350","2,066,200.00",EUR,,Conseq IM
+"share-etf","Allianz Global Artificial Intelligence (EUR)
+LU1548497699","2,744,300.00",EUR,,Conseq IM
+"share-etf","Allianz Global Artificial Intelligence (USD)
+LU1548497426","311,400.00",USD,,Conseq IM
+"share-etf","Allianz Global Artificial Intelligence hedged(CZK)
+LU1641601064","77,428,500.00",CZK,,Conseq IM
+"share-etf","Allianz Global Artificial Intelligence hedged(EUR)
+LU1548497772","2,830,800.00",EUR,,Conseq IM
+"share-etf","Allianz Global Multi-Asset Credit (USD)
+LU1480268744","111,100.00",USD,,Conseq IM
+"share-etf","Allianz Global Multi-Asset Credit hedged (CZK)
+LU1597343745","30,883,100.00",CZK,,Conseq IM
+"share-etf","Allianz Global Multi-Asset Credit hedged (EUR)
+LU1480269049","1,017,600.00",EUR,,Conseq IM
+"share-etf","Allianz Global Small Cap Equity (EUR)
+LU0962745302","1,820,500.00",EUR,,Conseq IM
+"share-etf","Allianz Global Small Cap Equity (USD)
+LU0963586101","188,700.00",USD,,Conseq IM
+"share-etf","Allianz China A-Shares AT (USD)
+LU1997245177","209,000.00",USD,,Conseq IM
+"share-etf","Allianz Income and Growth (USD)
+LU0689472784","234,500.00",USD,,Conseq IM
+"share-etf","Allianz Income and Growth hedged (EUR)
+LU1070113664","1,538,000.00",EUR,,Conseq IM
+"share-etf","Allianz Japan Equity (EUR)
+LU0348752352","1,435,400.00",EUR,,Conseq IM
+"share-etf","Allianz Japan Equity hedged (EUR)
+LU1143164405","1,289,700.00",EUR,,Conseq IM
+"share-etf","Allianz Japan Equity hedged (USD)
+LU1000922390","141,300.00",USD,,Conseq IM
+"share-etf","Allianz Structured Return (EUR)
+LU1428086174","674,300.00",EUR,,Conseq IM
+"share-etf","Allianz Structured Return hedged (CZK)
+LU1480529996","20,527,800.00",CZK,,Conseq IM
+"share-etf","Allianz Thematica AT (EUR)
+LU1981791327","1,462,000.00",EUR,,Conseq IM
+"share-etf","Allianz Thematica AT (USD)
+LU1917777945","1,712,700.00",USD,,Conseq IM
+"share-etf","Allianz Thematica AT hedged (CZK)
+LU2052517310","48,245,100.00",CZK,,Conseq IM
+"share-etf","Allianz US High Yield (USD)
+LU0674994412","141,500.00",USD,,Conseq IM
+"share-etf","Allianz US High Yield hedged (EUR)
+LU0795385821","1,143,100.00",EUR,,Conseq IM
+"share-etf","Allianz US Short Duration High Inc. Bond (USD)
+LU1363153740","123,800.00",USD,,Conseq IM
+"share-etf","Allianz US Short Duration High Inc. Bond hgd (CZK)
+LU1641600926","32,113,600.00",CZK,,Conseq IM
+"share-etf","Allianz US Short Duration High Inc. Bond hgd (EUR)
+LU1363153823","1,115,000.00",EUR,,Conseq IM
+"share-etf","Amundi CPR Defensive (EUR)
+LU1203018533","9,565,200.00",EUR,,Conseq IM
+"share-etf","Amundi CPR Global Disruptive Opportunities (EUR)
+LU1530899142","21,286,400.00",EUR,,Conseq IM
+"share-etf","Amundi CPR Global Disruptive Opportunities hg(CZK)
+LU1734694620","193,927,100.00",CZK,,Conseq IM
+"share-etf","Amundi CPR Global Food For Generation (CZK)
+LU2013746263","105,142,400.00",CZK,,Conseq IM
+"share-etf","Amundi CPR Global Food For Generation (EUR)z
+LU1653748860","1,237,100.00",EUR,,Conseq IM
+"share-etf","Amundi CPR Global Food For Generation (USD)
+LU2013745885","1,118,700.00",USD,,Conseq IM
+"share-etf","Amundi CPR Global Gold Mines (EUR)
+LU1989765471","839,400.00",EUR,,Conseq IM
+"share-etf","Amundi CPR Global Gold Mines (USD)
+LU1989766289","871,600.00",USD,,Conseq IM
+"share-etf","Amundi CPR Global Lifestyles (CZK)
+LU1989767170","1,050,300.00",CZK,,Conseq IM
+"share-etf","Amundi CPR Global Lifestyles (EUR)
+LU1989767253","1,101,600.00",EUR,,Conseq IM
+"share-etf","Amundi CPR Global Lifestyles (USD)
+LU1989767923","1,144,000.00",USD,,Conseq IM
+"share-etf","Amundi CPR Global Resources (CZK)
+LU1989768814","1,032,300.00",CZK,,Conseq IM
+"share-etf","Amundi CPR Global Resources (EUR)
+LU1989769036","1,082,600.00",EUR,,Conseq IM
+"share-etf","Amundi CPR Global Resources (USD)
+LU1989770125","1,124,200.00",USD,,Conseq IM
+"share-etf","Amundi CPR Global Silver Age (EUR)
+LU1291158233","13,821,400.00",EUR,,Conseq IM
+"share-etf","Amundi CPR Global Silver Age hedged (CZK)
+LU1425272355","129,534,600.00",CZK,,Conseq IM
+"share-etf","Amundi CPR MedTech hedged (CZK)
+LU2183822316","107,897,800.00",CZK,,Conseq IM
+"share-etf","Amundi CPR Reactive (EUR)
+LU1103787690","11,844,600.00",EUR,,Conseq IM
+"share-etf","Amundi CR - obligační fond (CZK)
+CZ0008475399","20,231.00",CZK,,Conseq IM
+"share-etf","Amundi CR - Sporokonto
+CZ0008475407","16,172.00",CZK,,Conseq IM
+"share-etf","Amundi CR All-Star Selection (CZK)
+CZ0008474517","13,918.00",CZK,,Conseq IM
+"share-etf","Amundi CR Balancovaný (CZK)
+CZ0008476033","10,339.00",CZK,,Conseq IM
+"share-etf","Amundi CR Dluhopisový PLUS (CZK)
+CZ0008471976","16,469.00",CZK,,Conseq IM
+"stocks",Apple Inc.,126.82,USD,,
+"stocks",Microsoft Corporation,212.45,USD,,
+"stocks",Amazon.com Inc.,"3,100.00",USD,,
+"stocks",Tesla Inc,823.99,USD,,
+"stocks",Facebook Inc. Class A,251.20,USD,,
+"stocks",Alphabet Inc. Class A,"1,720.01",USD,,
+"stocks",Alphabet Inc. Class C,"1,734.00",USD,,
+"stocks",Berkshire Hathaway Inc. Class B,232.51,USD,,
+"stocks",JPMorgan Chase & Co.,138.64,USD,,
+"stocks",Johnson & Johnson,160.50,USD,,
+"stocks",Visa Inc. Class A,201.50,USD,,
+"stocks",Procter & Gamble Company,134.66,USD,,
+"stocks",UnitedHealth Group Incorporated,353.73,USD,,
+"stocks",NVIDIA Corporation,514.50,USD,,
+"stocks",Walt Disney Company,171.20,USD,,
+"stocks",Home Depot Inc.,275.00,USD,,
+"stocks",Mastercard Incorporated Class A,323.20,USD,,
+"stocks",PayPal Holdings Inc,240.00,USD,,
+"stocks",Bank of America Corp,32.85,USD,,
+"stocks",Verizon Communications Inc.,57.38,USD,,
+"stocks",Intel Corporation,57.50,USD,,
+"stocks",Comcast Corporation Class A,48.66,USD,,
+"stocks",Netflix Inc.,496.40,USD,,
+"stocks",Adobe Inc.,458.00,USD,,
+"stocks",Merck & Co. Inc.,83.38,USD,,
+"stocks",AT&T Inc.,29.17,USD,,
+"stocks",Pfizer Inc.,36.62,USD,,
+"stocks",Exxon Mobil Corporation,47.83,USD,,
+"stocks",Walmart Inc.,144.48,USD,,
+"stocks",Thermo Fisher Scientific Inc.,501.26,USD,,
+"stocks",Abbott Laboratories,111.30,USD,,
+"stocks",PepsiCo Inc.,141.24,USD,,
+"stocks",AbbVie Inc.,110.21,USD,,
+"stocks",salesforce.com inc.,213.10,USD,,
+"stocks",Cisco Systems Inc.,45.20,USD,,
+"stocks",Coca-Cola Company,48.67,USD,,
+"stocks",Broadcom Inc.,445.75,USD,,
+"stocks",Qualcomm Inc,157.60,USD,,
+"stocks",Chevron Corporation,92.09,USD,,
+"stocks",NIKE Inc. Class B,140.72,USD,,
+"stocks",NextEra Energy Inc.,81.70,USD,,
+"stocks",Accenture Plc Class A,253.30,USD,,
+"stocks",Costco Wholesale Corporation,362.00,USD,,
+"stocks",Medtronic Plc,116.81,USD,,
+"stocks",McDonald's Corporation,209.91,USD,,
+"stocks",Texas Instruments Incorporated,168.28,USD,,
+"stocks",Eli Lilly and Company,190.77,USD,,
+"stocks",Bristol-Myers Squibb Company,66.60,USD,,
+"stocks",Danaher Corporation,236.98,USD,,
+"stocks",Union Pacific Corporation,216.21,USD,,
+"stocks",Honeywell International Inc.,205.65,USD,,
+"stocks",Amgen Inc.,245.47,USD,,
+"stocks",Linde plc,258.00,USD,,
+"stocks",Citigroup Inc.,64.56,USD,,
+"stocks",Wells Fargo & Company,31.93,USD,,
+"stocks",Philip Morris International Inc.,80.94,USD,,
+"stocks",Lowe's Companies Inc.,171.00,USD,,
+"stocks",Starbucks Corporation,102.27,USD,,
+"stocks",Oracle Corporation,61.78,USD,,
+"stocks",International Business Machines Corporation,128.39,USD,,
+"stocks",United Parcel Service Inc. Class B,158.50,USD,,
+"stocks",Boeing Company,204.30,USD,,
+"stocks",Morgan Stanley,75.32,USD,,
+"stocks",Advanced Micro Devices Inc.,87.95,USD,,
+"stocks",Caterpillar Inc.,194.62,USD,,
+"stocks",Raytheon Technologies Corporation,69.20,USD,,
+"stocks",Goldman Sachs Group Inc.,300.39,USD,,
+"stocks",BlackRock Inc.,729.44,USD,,
+"stocks",ServiceNow Inc.,514.00,USD,,
+"stocks",CVS Health Corporation,76.33,USD,,
+"stocks",General Electric Company,11.33,USD,,
+"stocks",American Tower Corporation,218.00,USD,,
+"stocks",Target Corporation,194.78,USD,,
+"stocks",Intuit Inc.,372.00,USD,,
+"stocks",3M Company,164.89,USD,,
+"stocks",Applied Materials Inc.,103.06,USD,,
+"stocks",Deere & Company,295.40,USD,,
+"stocks",Charter Communications Inc. Class A,628.91,USD,,
+"stocks",Intuitive Surgical Inc.,777.90,USD,,
+"stocks",Micron Technology Inc.,80.40,USD,,
+"stocks",Charles Schwab Corporation,58.75,USD,,
+"stocks",Booking Holdings Inc.,"2,119.50",USD,,

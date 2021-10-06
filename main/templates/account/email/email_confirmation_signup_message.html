@@ -1,0 +1,23 @@
+{% extends 'emails/email_base.html' %}
+
+{% load i18n static %}
+
+{% block content %}
+
+<h1>{% trans 'Welcome to the' %} site_name=current_site.name</h1>
+
+<p>
+    {% blocktrans with site_name=current_site.name site_domain=current_site.domain %}
+    Thank you for your registration on {{ site_domain }}.<br>
+    <br>
+    To confirm your email address, please click <a href="{{ activate_url }}">this link</a> .<br>
+    <br>
+    If the link does not work, you can always copy following URL to your address bar:<br>
+    <br>
+    <a href="{{ activate_url }}">{{ activate_url }}</a><br>
+    <br>
+    Best regards<br>
+    {{ site_domain }}
+    {% endblocktrans %}
+</p>
+{% endblock %}

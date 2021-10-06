@@ -1,0 +1,10 @@
+---
+
+- include_tasks: install.yml
+  when: not backup_remove
+
+- include_tasks: configure.yml
+  when: not backup_remove
+
+- include_tasks: remove.yml
+  when: backup_remove

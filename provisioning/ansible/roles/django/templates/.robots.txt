@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin
+Disallow: /wagtail
+{% if allow_robots %}Allow: *{% else %}Disallow: /{% endif %}
+
+{% if redirect_http %}
+Sitemap: https://{{ project_domain }}/sitemap.xml
+{% else %}
+Sitemap: http://{{ project_domain }}/sitemap.xml
+{% endif %}

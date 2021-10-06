@@ -1,0 +1,108 @@
+- hosts: "{{ host1 }}"
+  tasks:
+    - name: dump DB
+      postgresql_db:
+        name: '{{ db_name }}'
+        login_host: localhost
+        login_user: "{{ db_user }}"
+        login_password: '{{ db_pass }}'
+        state: dump
+        target: '/tmp/{{ db_name }}.dump'
+
+    - name: archive media files
+      archive:
+        path:
+          - "/var/www/{{ project_name }}/media"
+        dest: /tmp/{{ project_name }}_media.tar.gz
+        format: gz
+
+- hosts: "{{ host2 }}"
+  tasks:
+    - name: Transfer dump from host1 to host2
+      synchronize:
+        src: '/tmp/{{ db_name }}.dump'
+        dest: '/tmp/{{ db_name }}.dump'
+      delegate_to: "{{ host1 }}"
+
+    - name: Transfer media from host1 to host2
+      synchronize:
+        src: '/tmp/{{ project_name }}_media.tar.gz'
+        dest: '/tmp/{{ project_name }}_media.tar.gz'
+      delegate_to: "{{ host1 }}"
+
+    - name: Extract media.tar.gz on host2
+      unarchive:
+        src: "/tmp/{{ project_name }}_media.tar.gz"
+        dest: "/var/www/{{ project_name }}/"
+        remote_src: yes
+        list_files: yes
+
+    - name: loading variables
+      include_vars: roles/django/defaults/main.yml
+
+    - name: loading variables
+      include_vars: group_vars/all/var.yml
+
+    - name: delete project DB
+      postgresql_db:
+        name: '{{ db_name }}'
+        login_host: localhost
+        login_user: "{{ db_superuser }}"
+        login_password: '{{ vault_database_password }}'
+        state: absent
+
+    - name: create project DB
+      postgresql_db:
+        name: '{{ db_name }}'
+        login_host: localhost
+        login_user: "{{ db_superuser }}"
+        login_password: '{{ vault_database_password }}'
+        encoding: "{{ encoding }}"
+        template: template0
+        state: present
+
+    - name: create eshop extensions
+      postgresql_ext:
+        name: "{{ item }}"
+        db: '{{ db_name }}'
+        login_host: localhost
+        login_user: "{{ db_superuser }}"
+        login_password: '{{ vault_database_password }}'
+        state: present
+      with_items:
+        - hstore
+        - pg_trgm
+        - btree_gin
+      when: eshop
+
+    - name: restore DB on host2
+      postgresql_db:
+        name: '{{ db_name }}'
+        login_host: localhost
+        login_user: "{{ db_user }}"
+        login_password: '{{ db_pass }}'
+        state: restore
+        target: '/tmp/{{ db_name }}.dump'
+
+    - name: Delete media.tar.gz from /tmp
+      file:
+        path: "/tmp/{{ project_name }}_media.tar.gz"
+        state: absent
+
+    - name: Delete dump from /tmp
+      file:
+        path: "/tmp/{{ db_name }}.dump"
+        state: absent
+
+- hosts: "{{ host1 }}"
+  tasks:
+    - name: Delete media.tar.gz from /tmp
+      file:
+        path: "/tmp/{{ project_name }}_media.tar.gz"
+        state: absent
+
+    - name: Delete dump from /tmp
+      file:
+        path: "/tmp/{{ db_name }}.dump"
+        state: absent
+

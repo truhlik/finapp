@@ -1,0 +1,5 @@
+- role: geerlingguy.redis
+  version: 1.6.0
+- src: git+git@gitlab.com:endevel/internal/ansible/ansible-base-django.git
+  name: django
+  version: 0.1.9
